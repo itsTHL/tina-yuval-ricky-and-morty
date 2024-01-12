@@ -171,8 +171,8 @@ nextButton.addEventListener("click", () => {
 // This piece of code came from Google
 //
 window.addEventListener("scroll", function () {
-  var cards = document.querySelectorAll(".card");
-  for (var i = 0; i < cards.length; i++) {
+  const cards = document.querySelectorAll(".card");
+  for (let i = 0; i < cards.length; i++) {
     if (isElementInViewport(cards[i])) {
       cards[i].classList.add("animate");
     } else {
@@ -181,7 +181,7 @@ window.addEventListener("scroll", function () {
   }
 });
 function isElementInViewport(element) {
-  var rect = element.getBoundingClientRect();
+  const rect = element.getBoundingClientRect();
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
