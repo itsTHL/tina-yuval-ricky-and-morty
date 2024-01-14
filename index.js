@@ -143,6 +143,7 @@ prevButton.addEventListener("click", () => {
   if (currentPage !== page) {
     currentPage -= 1;
   } else {
+    // prevButton.classList.disabled = true;
     currentPage = page;
   }
   pagination.textContent = currentPage + ` | ${maxPage}`;
@@ -160,6 +161,7 @@ nextButton.addEventListener("click", () => {
   if (currentPage < maxPage) {
     currentPage += 1;
   } else {
+    // nextButton.disabled = true;
     currentPage = maxPage;
   }
   pagination.textContent = currentPage + ` | ${maxPage}`;
