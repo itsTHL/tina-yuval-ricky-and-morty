@@ -131,6 +131,7 @@ searchBar.addEventListener("submit", async (event) => {
   } catch (error) {
     console.error(error);
   }
+  event.target.reset();
 });
 
 /* 
